@@ -1,0 +1,8 @@
+<form id="login_container" [formGroup]="profileForm">
+  <mat-form-field>
+    <input matInput placeholder="Pseudo" value="" formControlName="name" />
+  </mat-form-field>
+  <button (click)="submitName()" mat-flat-button color="primary">
+    Connexion
+  </button>
+</form>

@@ -1,0 +1,21 @@
+#chat {
+  display: flex;
+  height: calc(100% - 64px);
+  #first {
+    width: 15vw;
+    background-color: #444444;
+    mat-list-item {
+      color: white;
+      cursor: pointer;
+    }
+  }
+  #second {
+    width: 85vw;
+    padding: 16px;
+  }
+}
+mat-sidenav-container {
+  mat-sidenav-content {
+    position: relative;
+  }
+}

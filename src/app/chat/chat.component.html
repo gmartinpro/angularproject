@@ -1,0 +1,19 @@
+<div id="chat">
+  <div id="first">
+    <mat-list *ngIf="channels?.length > 0; else noChannel">
+      <mat-list-item
+        color="light"
+        *ngFor="let channel of channels"
+        [routerLink]="'salon/' + channel.id"
+      >
+        #{{ channel.name }}</mat-list-item
+      >
+    </mat-list>
+    <ng-template #noChannel>
+      <h2>Aucun salon disponible</h2>
+    </ng-template>
+  </div>
+  <div id="second">
+    <router-outlet class="router-outlet" main></router-outlet>
+  </div>
+</div>
