@@ -11,8 +11,6 @@ export class UserService {
 
   setUser(value: string) {
     this.user.next(value);
-    console.log(value, value ? true : false);
-
     this.isConnected = value ? true : false;
   }
 
